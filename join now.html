@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Now</title>
+    <style>
+        
+        body {
+            background-color: #F0E68C; 
+            font-family: Arial, sans-serif;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            font-size: 36px; 
+            font-weight: bold;
+            margin-bottom: 20px; 
+        }
+
+        .container {
+            background-color: #ADD8E6; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 36px; 
+        }
+
+        p {
+            font-size: 24px; 
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 18px; 
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            font-size: 18px; 
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            font-size: 20px; 
+            background-color: #008000; 
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <strong>MB SOFTWARE SOLUTIONS</strong>
+    </div>
+    <div class="container">
+        <h1>Join Now</h1>
+        <p>Register to enroll in our technical courses.</p>
+        
+        
+        <form action="process_registration.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
