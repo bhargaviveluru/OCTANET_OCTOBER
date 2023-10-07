@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - MK Online Trading Institute</title>
+    <title>Contact Us - MB Software Solutions</title>
     <link rel="icon" href="myprojectlogo.jpeg">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
     <style>
         * {
             margin: 0;
@@ -21,22 +25,26 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
 
         header {
-            background-color: #3498db;
+            background-color:palevioletred;
             color: white;
             padding: 1rem;
             text-align: center;
         }
 
         .contact-details {
-            background-color: white;
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Increased container size */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Align text to the left */
+    border: 5px solid palevioletred;
+}
 
         h1 {
             font-size: 2rem;
@@ -53,8 +61,23 @@
             margin: 0.5rem 0;
         }
 
+        .social-icons {
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 24px;
+            color:palevioletred;
+        }
+
+        .working-hours {
+            margin-top: 1rem;
+        }
+
         footer {
-            background-color: #3498db;
+            background-color:palevioletred;
             color: white;
             padding: 1rem;
             text-align: center;
@@ -68,14 +91,25 @@
     </header>
 
     <section class="contact-details">
-        <h2>Address</h2>
+        <h2>Address <i class="fas fa-map-marker-alt"></i></h2>
         <p>Plot No 16, 2nd Floor, Pioneer Towers</p>
         <p>Madhapur, Hyderabad, Telangana 500081</p>
         
-        <h2>Contact Information</h2>
+        <h2>Contact Information <i class="fas fa-envelope"></i></h2>
         <p>Email: info@mbsoftwaresolutions.com</p>
-        <p>Phone: +1 (123) 456-7890</p>
+        <p>Phone: +1 (123) 456-7890 <i class="fas fa-phone"></i></p>
+        
+        <!-- Working Hours -->
+        <h2>Working Hours <i class="fas fa-clock"></i></h2>
+        <p>Mon-Fri: 9 AM - 6 PM (Local Time)</p>
     </section>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
 
     <footer>
         <p>&copy; 2023 MB SOFTWARE SOLUTIONS</p>
